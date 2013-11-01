@@ -11,8 +11,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 1px 5px rgba(70, 70, 70, .4);
-  background-color: $white;
+  border-bottom: 1px solid lighten($red,20);
+  background-color: $red;
   .docked & {
     position: fixed;
   }
@@ -20,16 +20,21 @@
     margin: 10px 0;
   }
   .title {
+    height: 40px;
     display: table;
     float: left;
-    height: 40px;
     > a {
       display: table-cell;
       vertical-align: middle;
+      text-align: center;
     }
   }
   #site-logo {
     max-height: 40px;
+    max-width: 350px;
+  }
+  #site-logo.logo-big {
+    max-height: 120px;
     max-width: 350px;
   }
   .icon-home {
@@ -43,7 +48,7 @@
   .current-username {
     float: left;
     a {
-      color: $black;
+      color: $white;
       font-size: 14px;
       line-height: 40px;
     }
@@ -62,15 +67,9 @@
       }
       &:first-child.active .icon {
       }
-      &:last-child .icon {
-        border-right: 1px solid #ccc;
-      }
     }
     .icon {
       display: block;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      border-left: 1px solid #d6d6d6;
       padding: 3px;
       color: $nav-button-color;
       text-decoration: none;
@@ -137,7 +136,7 @@
 }
 
 #main-outlet {
-  padding-top: 75px;
+  padding-top: 155px;
 }
 
 // Dropdowns

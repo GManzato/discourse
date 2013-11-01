@@ -135,12 +135,14 @@ nav.post-controls {
          &:hover {
           background: #eee;
           color: #888;
+
+
         }
 
         &:active {
             @include box-shadow(inset 0 1px 3px rgba($black, 0.2));
-        }
 
+        }
         &.hidden {
           display: none;
         }
@@ -179,20 +181,25 @@ nav.post-controls {
           }
         }
       }
-  }
+    }
 
-  .embedded-posts {
-    background: #eee;
-    .quote .title {background: #ddd;}
-    blockquote {background: #ddd;}
-    &.bottom { margin-top: -11px;}
-    .topic-meta-data h5 {margin: 5px;}
-    .topic-meta-data-inside {
+
+
+.embedded-posts {
+  background: #eee;
+
+  .quote .title {background: #ddd;}
+  blockquote {background: #ddd;}
+  &.bottom { margin-top: -11px;}
+
+  .topic-meta-data h5 {margin: 5px;}
+
+  .topic-meta-data-inside {
     margin: -3px 0 0 0;
     color: #aaa;
-    }
     .topic-meta-data {padding-top: 20px;}
   }
+}
 
 .post-action {
   .relative-date {
@@ -436,7 +443,7 @@ iframe {
 
 .extra-info-wrapper {
   float: left; 
-  width: 78%;
+  width: 75%;
   .topic-statuses {margin-right: 5px;}
 }
 
@@ -444,8 +451,12 @@ iframe {
   h1 {
     margin: 5px 0 0 0;
     font-size: 2em;
+
+  a:not(.badge-category) {
     line-height: 1.2em;
     overflow: hidden;
+  }
+
   }
 
   a.star {
@@ -469,8 +480,10 @@ iframe {
   padding-top: 30px;
 
   img { text-align: center; }
-  .contents { text-align: center;}
-  h3 { display: block; }
+.contents {
+
+  text-align: center;}
+h3 {display: block;}
 
 }
 
@@ -727,8 +740,11 @@ button.show-replies {
   background: #eee;
   margin-bottom: 0;
   padding-bottom: 8px;
+
+
     &:hover {background: #ddd;
        .badge-posts {color: #888;}
+
     }
   }
 
@@ -815,8 +831,13 @@ clear: both;
 
 #selected-posts {
 
-  margin-left: 330px;
-  width: 12%;
+ margin-left: 330px;
+    width: 12%;
+    p {
+      font-size: 13px;
+    }
+
+
   position: fixed;
   z-index: 1000;
   left: 50%;
